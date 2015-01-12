@@ -395,7 +395,7 @@ sub install_files {
 
     my $symlink_base = _calculate_symlink_base( $source_dir, $target_dir );
 
-    my $backup_dir = $target_dir . '/backup';
+    my $backup_dir = $target_dir . '/.dotbackup';
     DEBUG("Backup dir: $backup_dir");
 
     my $cwd_before_install = getcwd();
