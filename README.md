@@ -6,6 +6,12 @@ This repo is a skeleton/template repo for tracking dotfiles.  It contains
 a utility ([dfm](https://github.com/justone/dfm)) to help with managing and
 updating your dotfiles.
 
+This fork contains a slightly modified version of the original utility:
+
+* Usage of ~/.local/bin instead of ~/bin to comply with the XDG specification
+* Renamed auxilliary files and folders (.backup to .dotbackup and 
+.dfminstall to .dotinstall)
+
 ## Using this repo
 
 First, fork this repo.
@@ -22,7 +28,7 @@ Finally, to install your dotfiles onto a new system:
 
     $ cd $HOME
     $ git clone git@github.com:username/dotfiles.git .dotfiles
-    $ ./.dotfiles/bin/dfm install # creates symlinks to install files
+    $ ./.dotfiles/.local/bin/dfm install # creates symlinks to install files
 
 ## Full documentation
 
